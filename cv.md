@@ -5,11 +5,11 @@
 
 - **Telephone number**: +375336623761 
 
-- **E-mail**: 375336623761@ya.ru
+- **E-mail**: [375336623761@ya.ru](mailto:375336623761@ya.ru)
 
-- **job.tut.by** - https://brest.jobs.tut.by/resume/c631eadbff05bdba340039ed1f616237566e7a
+- **jobs.tut.by** - [jobs.tut.by/resume/c631eadbff05bdba340039ed1f616237566e7a](https://brest.jobs.tut.by/resume/c631eadbff05bdba340039ed1f616237566e7a)
 
-- **github -** [https://github.com/NickolayKroh/](https://github.com/NickolayKroh/)
+- **github -** [github.com/NickolayKroh/](https://github.com/NickolayKroh/)
 
 
 ## **Summary**
