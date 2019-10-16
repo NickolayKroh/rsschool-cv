@@ -79,6 +79,15 @@ function zeros(expression) {
 
 ## **Projects**
 
+### Browser game *2D-Race-Game*
+
+**Project:** [github.com](https://github.com/NickolayKroh/2D-Race-Game)
+
+**Position:** developer, designer
+
+**Environment:** HTML, js
+
+
 ### Android App *DragAndDraw*
 
 **Project:** [github.com](https://github.com/NickolayKroh/DragAndDraw)
@@ -86,6 +95,7 @@ function zeros(expression) {
 **Position:** developer
 
 **Environment:** Android, Java
+
 
 ### Android App *PhotoGallery*
 
