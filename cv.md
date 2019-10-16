@@ -46,7 +46,7 @@ Advanced linux and windows user.
 
 # **Professional Experience**
 
-###  �Belarusbank�
+###  "Belarusbank"
    
 **Position**: Systems Engineer (08.08.2015 - till now).
 
@@ -72,7 +72,7 @@ Advanced linux and windows user.
 
 ### Rolling scopes
 
-Also I�ve made the following few talks:
+Also I've made the following few talks:
 
 - [Brackets](https://github.com/NickolayKroh/brackets)
 - [Tic-Tac-Toe](https://github.com/NickolayKroh/tic-tac-toe)
