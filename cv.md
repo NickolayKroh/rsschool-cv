@@ -45,6 +45,10 @@ Advanced linux and windows user.
 
 
 ## **Code example**
+
+<details>
+  <summary>This code for given expression returns the number of zeros in the end of number. Expression contains only factorials of numbers and multiplying signs</summary>
+  
 ```javascript
 function zeros(expression) {
   //we get 0 at the of the product when we had pair of 2 and 5 as factors
@@ -68,47 +72,48 @@ function zeros(expression) {
   return Math.min(fives, twos);
 } 
 ```
+</details>
 
 
 ## **Professional Experience**
 
-###  "Belarusbank"
+- ### "Belarusbank"
    
-**Position**: Systems Engineer (08.08.2015 - till now).
+- **Position**: Systems Engineer (08.08.2015 - till now).
 
 
 ## **Projects**
 
-### Browser game *2D-Race-Game*
+> ### Browser game *2D-Race-Game*
 
-**Project:** [github.com](https://github.com/NickolayKroh/2D-Race-Game)
+- **Project:** [github.com](https://github.com/NickolayKroh/2D-Race-Game)
 
-**Position:** developer, designer
+- **Position:** developer, designer
 
-**Environment:** HTML, js
-
-
-### Android App *DragAndDraw*
-
-**Project:** [github.com](https://github.com/NickolayKroh/DragAndDraw)
-
-**Position:** developer
-
-**Environment:** Android, Java
+- **Environment:** HTML, js
 
 
-### Android App *PhotoGallery*
+>### Android App *DragAndDraw*
 
-**Project:** [github.com](https://github.com/NickolayKroh/PhotoGallery)
+- **Project:** [github.com](https://github.com/NickolayKroh/DragAndDraw)
 
-**Position:** developer,  designer
+- **Position:** developer
 
-**Environment:** Android, Java
+- **Environment:** Android, Java
 
 
-### Rolling scopes
+> ### Android App *PhotoGallery*
 
-Also I've made the following few talks:
+- **Project:** [github.com](https://github.com/NickolayKroh/PhotoGallery)
+
+- **Position:** developer,  designer
+
+- **Environment:** Android, Java
+
+
+> ### Rolling scopes
+
+&nbsp;&nbsp;&nbsp; Also I've made the following few talks:
 
 - [Brackets](https://github.com/NickolayKroh/brackets)
 - [Tic-Tac-Toe](https://github.com/NickolayKroh/tic-tac-toe)
