@@ -46,10 +46,10 @@ Advanced linux and windows user.
 
 ## **Code example**
 
-<details>
   <summary>This code for given expression returns the number of zeros in the end of number. Expression contains only factorials of numbers and multiplying signs</summary>
   
 ```javascript
+
 function zeros(expression) {
   //we get 0 at the of the product when we had pair of 2 and 5 as factors
   let twos = 0;
@@ -72,7 +72,6 @@ function zeros(expression) {
   return Math.min(fives, twos);
 } 
 ```
-</details>
 
 
 ## **Professional Experience**
