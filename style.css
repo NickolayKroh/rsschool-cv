@@ -9,6 +9,29 @@ body {
     background: #F4F4F4;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 35px 5px 15px 5px;
+}
+
+ul {
+    padding: 5px 15px;
+    
+    font-weight: 200;
+}
+
+strong {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+p {
+    text-align: justify;
+    
+}
+
 .main-header {
     display: flex;
     flex-direction: row;
@@ -47,4 +70,7 @@ body {
 
 .main-container {
     width: 1024px;
+    display: flex;
+    flex-direction: column;
 }
+
