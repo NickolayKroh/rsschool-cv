@@ -18,22 +18,15 @@ header {
     display: flex;
     flex-direction: row;
     width: 1024px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 main {
+    min-width: 1024px;
     width: 1024px;
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-}
-
-footer {
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    background-color: #2c2c2c;
-    color: rgb(221, 221, 218);
 }
 
 h2 {
@@ -41,6 +34,10 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     margin: 35px 5px 15px 5px;
+}
+
+pre {
+    margin: 5px 0px 5px -30px;
 }
 
 ul {
@@ -55,6 +52,15 @@ strong {
 
 p {
     text-align: justify;
+}
+
+footer {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2c2c2c;
+    color: rgb(221, 221, 218);
+    justify-content: center
 }
 
 .header-logo {
@@ -87,10 +93,31 @@ p {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
-.footer-email {
-    text-align: left;
+.highlight {
+    background-color: rgb(119, 168, 170);
+    width: 950px;
 }
 
-.footer-date {
-    text-align: right;
+.rw {
+    font-weight: 800;
+}
+
+.comment {
+    color: rgb(19, 112, 0);
+}
+
+.char {
+    color: rgb(153, 0, 153);
+}
+
+.o {
+    color: rgb(170, 0, 0);
+}
+
+.numeric {
+    color: blue;
+}
+
+.footer-email {
+    margin: 5px 700px 5px 5px;
 }

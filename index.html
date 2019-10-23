@@ -17,7 +17,7 @@
         </div>
     </header>
     <main>
-      <section class="contacts">
+      <section>
           <h2>Contact Info</h2>
           <ul>
               <li>
@@ -34,13 +34,13 @@
               </li>
           </ul>
       </section>
-      <section class="summary">
+      <section>
           <h2>Summary</h2>
           <p>A bit of web development experience (HTML, CSS, JavaScript, browser extensions) and Android apps development. I also have experience in graphic packages, such as Photoshop or Gimp.<br />
           Good analytical skills, quick learner, motivated to professional growth.
           Advanced linux and windows user.</p>
       </section>
-      <section class="skills">
+      <section>
           <h2>Technical Skills</h2>
           <p><strong>Programming languages and technologies:</strong></p>
           <ul>
@@ -55,7 +55,7 @@
               <li>SQL</li>
           </ul>
       </section>
-      <section class="tools">
+      <section>
           <h2>Tools:</h2>
           <ul>
               <li>GIT</li>
@@ -65,7 +65,7 @@
               <li>Android Studio</li>
           </ul>
       </section>
-      <section class="other">
+      <section>
           <h2>Other skills:</h2>
           <ul>
               <li>My profile with completed courses: <a href="https://www.codecademy.com/profiles/0239390839">codecademy.com</a></li>
@@ -77,31 +77,31 @@
           <summary>This code for given expression returns the number of zeros in the end of number. Expression contains only factorials of numbers and multiplying signs</summary>
 
           <div class="highlight"><pre><code>
-          <span class="rw">function</span> zeros(expression) {
-          <span class="comment">//we get 0 at the of the product when we had pair of 2 and 5 as factors</span>
-          <span class="rw">let</span> twos = <span class="numeric">0</span>;
-          <span class="rw">let</span> fives = <span class="numeric">0</span>;
-          <span class="rw">let</span> factorial = expression.split(<span class="char">'*'</span>);
+      <span class="rw">function</span> zeros(expression) {
+      <span class="comment">//we get 0 at the of the product when we had pair of 2 and 5 as factors</span>
+      <span class="rw">let</span> twos = <span class="numeric">0</span>;
+      <span class="rw">let</span> fives = <span class="numeric">0</span>;
+      <span class="rw">let</span> factorial = expression.split(<span class="char">'*'</span>);
+      
+      <span class="rw">for</span>(<span class="rw">let</span> i = <span class="numeric">0</span>; i <span class="o">&lt;</span> factorial.length; <span class="o">++</span>i) {
+          <span class="rw">let</span> factorialSign <span class="o">= </span><span class="numeric">1</span>; <span class="comment">// n!</span>
+          <span class="rw">if</span>(factorial[i].substr(<span class="o">-</span><span class="numeric">2</span>, <span class="numeric">2</span>) <span class="o">===</span> <span class="char">'!!'</span>)
+          factorialSign <span class="o">=</span> <span class="numeric">2</span>; <span class="comment">// n!!</span>
           
-          <span class="rw">for</span>(<span class="rw">let</span> i = <span class="numeric">0</span>; i <span class="o">&lt;</span> factorial.length; <span class="o">++</span>i) {
-              <span class="rw">let</span> factorialSign <span class="o">= </span><span class="numeric">1</span>; <span class="comment">// n!</span>
-              <span class="rw">if</span>(factorial[i].substr(<span class="o">-</span><span class="numeric">2</span>, <span class="numeric">2</span>) <span class="o">===</span> <span class="char">'!!'</span>)
-              factorialSign <span class="o">=</span> <span class="numeric">2</span>; <span class="comment">// n!!</span>
-              
-              <span class="rw">for</span>(<span class="rw">let</span> n <span class="o">=</span> factorial[i].slice(<span class="numeric">0</span>, <span class="o">-</span>factorialSign); n <span class="o">&gt;</span> <span class="numeric">1</span>; n <span class="o">-=</span> factorialSign) {
-                  <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">5</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">5</span>; m <span class="o">/=</span> <span class="numeric">5</span>)
-                  fives<span class="o">++</span>;
-                  <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">2</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">2</span>; m <span class="o">/=</span> <span class="numeric">2</span>)
-                  twos<span class="o">++</span>;
-              }
+          <span class="rw">for</span>(<span class="rw">let</span> n <span class="o">=</span> factorial[i].slice(<span class="numeric">0</span>, <span class="o">-</span>factorialSign); n <span class="o">&gt;</span> <span class="numeric">1</span>; n <span class="o">-=</span> factorialSign) {
+              <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">5</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">5</span>; m <span class="o">/=</span> <span class="numeric">5</span>)
+              fives<span class="o">++</span>;
+              <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">2</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">2</span>; m <span class="o">/=</span> <span class="numeric">2</span>)
+              twos<span class="o">++</span>;
           }
-          
-          <span class="rw">return</span> Math.min(fives, twos);
-          } 
+      }
+      
+      <span class="rw">return</span> Math.min(fives, twos);
+      }
           </code></pre></div>
       </section>
-      <section class="">
-        <h2 id="profession">Professional Experience</h2>
+      <section>
+        <h2>Professional Experience</h2>
         <ul>
           <li>
             <h3>“Belarusbank”</h3>
@@ -109,8 +109,8 @@
           <li><strong>Position</strong>: Systems Engineer (08.08.2015 - till now).</li>
         </ul>
       </section>
-      <section class="projects">
-        <h2 id="projects">Projects</h2>
+      <section>
+        <h2>Projects</h2>
         <blockquote>
           <h3>Browser game <em>2D-Race-Game</em></h3>
         </blockquote>
@@ -163,14 +163,14 @@
           <li><a href="https://github.com/NickolayKroh/morse-decoder">Morse-Decoder</a></li>
         </ul>
       </section>
-      <section class="education">
+      <section>
         <h2>Education</h2>
         <ul>
           <li>Higher, BREST STATE UNIVERSITY named after A.S. Pushkin, specialty <strong>Mathematics and computer science</strong></li>
           <li>Higher, BREST STATE TECHNICAL UNIVERSITY, specialty <strong>Software for Information Technologies</strong></li>
         </ul>
       </section>
-      <section class="english">
+      <section>
         <h2>English</h2>
         <ul>
           <li>I can easily read any documentation, watch videos and briefly talk in English with somebody. But without any practice at my current job my English level:  <strong>B1 (Intermediate)</strong></li>
@@ -180,9 +180,9 @@
     </main>
     <footer>
       <div class="footer-email">
-        <span><a href="mailto:375336623761@gmail.com"></a>e-mail</span>
+        <a href="mailto:375336623761@gmail.com">e-mail</a>
       </div>
-      <div class="footer-date">
+      <div>
         <span>September 2019 г.</span>
       </div>
     </footer>
