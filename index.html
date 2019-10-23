@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Krokh Nickolay CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-logo">
+            <img src="assets/avatar.jpg" alt="avatar" class="avatar">
+        </div>
+        <div class="header-title">
+            <h1>Krokh Nickolay</h1>
+            <h3>Junior Front-End Developer</h3>
+        </div>
+    </header>
+    <main>
+      <section>
+          <h2>Contact Info</h2>
+          <ul>
+              <li>
+                  <p><strong>Telephone number: </strong>+375336623761</p>
+              </li>
+              <li>
+                  <p><strong>E-mail: </strong><a href="mailto:375336623761@ya.ru">375336623761@ya.ru</a></p>
+              </li>
+              <li>
+                  <p><strong>jobs.tut.by - </strong><a href="https://brest.jobs.tut.by/resume/c631eadbff05bdba340039ed1f616237566e7a">resume</a></p>
+              </li>
+              <li>
+                  <p><strong>github - </strong><a href="https://github.com/NickolayKroh/">github.com/NickolayKroh/</a></p>
+              </li>
+          </ul>
+      </section>
+      <section>
+          <h2>Summary</h2>
+          <p>A bit of web development experience (HTML, CSS, JavaScript, browser extensions) and Android apps development. I also have experience in graphic packages, such as Photoshop or Gimp.<br />
+          Good analytical skills, quick learner, motivated to professional growth.
+          Advanced linux and windows user.</p>
+      </section>
+      <section>
+          <h2>Technical Skills</h2>
+          <p><strong>Programming languages and technologies:</strong></p>
+          <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS/SCSS</li>
+              <li>Node.js</li>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Apex</li>
+              <li>C/C++</li>
+              <li>SQL</li>
+          </ul>
+      </section>
+      <section>
+          <h2>Tools:</h2>
+          <ul>
+              <li>GIT</li>
+              <li>Webpack</li>
+              <li>VS Code</li>
+              <li>Webstorm</li>
+              <li>Android Studio</li>
+          </ul>
+      </section>
+      <section>
+          <h2>Other skills:</h2>
+          <ul>
+              <li>My profile with completed courses: <a href="https://www.codecademy.com/profiles/0239390839">codecademy.com</a></li>
+              <li>My profile in <a href="https://www.codewars.com/users/NickolayKroh">codewars.com</a></li>
+          </ul>
+      </section>
+      <section class="code">
+          <h2>Code example</h2>
+          <summary>This code for given expression returns the number of zeros in the end of number. Expression contains only factorials of numbers and multiplying signs</summary>
+
+          <div class="highlight"><pre><code>
+      <span class="rw">function</span> zeros(expression) {
+      <span class="comment">//we get 0 at the of the product when we had pair of 2 and 5 as factors</span>
+      <span class="rw">let</span> twos = <span class="numeric">0</span>;
+      <span class="rw">let</span> fives = <span class="numeric">0</span>;
+      <span class="rw">let</span> factorial = expression.split(<span class="char">'*'</span>);
+      
+      <span class="rw">for</span>(<span class="rw">let</span> i = <span class="numeric">0</span>; i <span class="o">&lt;</span> factorial.length; <span class="o">++</span>i) {
+          <span class="rw">let</span> factorialSign <span class="o">= </span><span class="numeric">1</span>; <span class="comment">// n!</span>
+          <span class="rw">if</span>(factorial[i].substr(<span class="o">-</span><span class="numeric">2</span>, <span class="numeric">2</span>) <span class="o">===</span> <span class="char">'!!'</span>)
+          factorialSign <span class="o">=</span> <span class="numeric">2</span>; <span class="comment">// n!!</span>
+          
+          <span class="rw">for</span>(<span class="rw">let</span> n <span class="o">=</span> factorial[i].slice(<span class="numeric">0</span>, <span class="o">-</span>factorialSign); n <span class="o">&gt;</span> <span class="numeric">1</span>; n <span class="o">-=</span> factorialSign) {
+              <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">5</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">5</span>; m <span class="o">/=</span> <span class="numeric">5</span>)
+              fives<span class="o">++</span>;
+              <span class="rw">for</span>(<span class="rw">let</span> m <span class="o">=</span> n; m <span class="o">%</span> <span class="numeric">2</span> <span class="o">===</span> <span class="numeric">0</span> <span class="o">&amp;&amp;</span> m <span class="o">&gt;=</span> <span class="numeric">2</span>; m <span class="o">/=</span> <span class="numeric">2</span>)
+              twos<span class="o">++</span>;
+          }
+      }
+      
+      <span class="rw">return</span> Math.min(fives, twos);
+      }
+          </code></pre></div>
+      </section>
+      <section>
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>
+            <h3>“Belarusbank”</h3>
+          </li>
+          <li><strong>Position</strong>: Systems Engineer (08.08.2015 - till now).</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <blockquote>
+          <h3>Browser game <em>2D-Race-Game</em></h3>
+        </blockquote>
+        <ul>
+          <li>
+            <p><strong>Project: </strong><a href="https://github.com/NickolayKroh/2D-Race-Game">github.com</a></p>
+          </li>
+          <li>
+            <p><strong>Position:</strong> developer, designer</p>
+          </li>
+          <li>
+            <p><strong>Environment:</strong> HTML, js</p>
+          </li>
+        </ul>
+        <blockquote>
+          <h3>Android App <em>DragAndDraw</em></h3>
+        </blockquote>
+        <ul>
+          <li>
+            <p><strong>Project: </strong><a href="https://github.com/NickolayKroh/DragAndDraw">github.com</a></p>
+          </li>
+          <li>
+            <p><strong>Position:</strong> developer</p>
+          </li>
+          <li>
+            <p><strong>Environment:</strong> Android, Java</p>
+          </li>
+        </ul>
+        <blockquote>
+          <h3>Android App <em>PhotoGallery</em></h3>
+        </blockquote>
+        <ul>
+          <li>
+            <p><strong>Project: </strong><a href="https://github.com/NickolayKroh/PhotoGallery">github.com</a></p>
+          </li>
+          <li>
+            <p><strong>Position:</strong> developer,  designer</p>
+          </li>
+          <li>
+            <p><strong>Environment:</strong> Android, Java</p>
+          </li>
+        </ul>
+        <blockquote>
+          <h3>Rolling scopes</h3>
+        </blockquote>
+        <p>    Also I’ve made the following few talks:</p>
+        <ul>
+          <li><a href="https://github.com/NickolayKroh/brackets">Brackets</a></li>
+          <li><a href="https://github.com/NickolayKroh/tic-tac-toe">Tic-Tac-Toe</a></li>
+          <li><a href="https://github.com/NickolayKroh/morse-decoder">Morse-Decoder</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>Higher, BREST STATE UNIVERSITY named after A.S. Pushkin, specialty <strong>Mathematics and computer science</strong></li>
+          <li>Higher, BREST STATE TECHNICAL UNIVERSITY, specialty <strong>Software for Information Technologies</strong></li>
+        </ul>
+      </section>
+      <section>
+        <h2>English</h2>
+        <ul>
+          <li>I can easily read any documentation, watch videos and briefly talk in English with somebody. But without any practice at my current job my English level:  <strong>B1 (Intermediate)</strong></li>
+          <li>Daily I practice at <a href="https://lingualeo.com/">lingualeo.com</a> and i’ve reached 31 level by now.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-email">
+        <a href="mailto:375336623761@gmail.com">e-mail</a>
+      </div>
+      <div>
+        <span>September 2019 г.</span>
+      </div>
+    </footer>
+  </body>
+</html>
