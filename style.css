@@ -121,3 +121,8 @@ footer {
 .footer-email {
     margin: 5px 700px 5px 5px;
 }
+
+.footer-email a{
+    text-decoration: none;
+    color: rgb(221, 221, 218);
+}
